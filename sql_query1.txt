@@ -1,0 +1,10 @@
+CREATE DATABASE EmployeeDB;
+
+USE EmployeeDB;
+
+CREATE TABLE employees (
+id INT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30),
+position VARCHAR(20),
+age INT
+);
