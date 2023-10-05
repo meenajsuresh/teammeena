@@ -9,10 +9,11 @@ def homepage ():
 @app.route("/confim",methods=["POST","GET"])
 def register():
     if request.method=="POST":
-       n = request.form.get("name")
+       n = request.form.get("firstname")
+       l = request.form.get("lastname")
        a = request.form.get("age")
        c = request.form.get("city")
-       return render_template("confirm.html",name=n,age=a,city=c)
+       return render_template("confirm.html",firstname=n,lastname=l,age=a,city=c)
 if __name__=="__main__":
     app.run(debug=True)
 
